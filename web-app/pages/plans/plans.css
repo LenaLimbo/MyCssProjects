@@ -1,0 +1,37 @@
+main{
+    padding-top: 32px;
+}
+
+.plan{
+    width: 60%;
+    margin: 5px 0;
+    border: 2px solid #1565c0;
+    border-radius: 3px;
+    border-left: none;
+}
+
+.plan a{ 
+    padding: 16px;
+    text-decoration: none;
+    color: #0d47a1;
+    display: block;
+}
+
+.clearfix{
+    clear: both;    
+}
+
+#plus{
+
+}
+
+#free{
+    float: right;
+    border-right: none;
+    border-left: 2px solid #1565c0;
+}
+
+#permium{
+
+}
+
