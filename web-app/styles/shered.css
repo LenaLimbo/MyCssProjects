@@ -28,6 +28,8 @@
     /* background: #FCFCFD; */
     padding: 10px 5px;
     color: #556DB1;
+    position: fixed;
+    z-index: 1;
   }
   
   .main-header__logo{
