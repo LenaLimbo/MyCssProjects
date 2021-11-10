@@ -1,74 +1,86 @@
-
-#overview{
-  width: 100%;
-  height: 600px; 
-  background:linear-gradient(rgb(167, 167, 167), rgb(53, 52, 52)) no-repeat fixed center/cover;
+#overview {
+  width: 100vw;
+  height: 30vh;
+  background: linear-gradient(rgb(212, 211, 211), rgb(128, 127, 127)) no-repeat
+    fixed center/cover;
 }
 
-.section-title{
+@media (min-width: 40rem) {
+  #overview {
+    height: 50vh;
+  }
+}
+
+.section-title {
   color: #a2a2be;
   text-align: center;
 }
 
-.plan__list{
+.plan__list {
   width: 65%;
   margin: auto;
 }
 
-.plan{
-  width: 30%;
-  padding: 16px;
-  margin: 8px;
-  display: inline-block;
-  vertical-align: middle;
+.plan {
+  width: 100%;
+  padding: 1rem;
+  margin: 0.5rem;
   text-align: center;
   color: #424242;
-  box-shadow: 0 0 25px 5px rgba(116, 116, 185, 0.4);
-  background: #e6e7e7; 
-  border-radius: 3px;
+  box-shadow: 0 0 1.6rem 0.5rem rgba(116, 116, 185, 0.4);
+  background: #e6e7e7;
+  border-radius: 0.3rem;
 }
 
-.plan--highlighted{
+.plan--highlighted {
   box-shadow: 0 0 25px 5px rgba(116, 116, 185, 0.4);
-  background: #d6d8d8; 
+  background: #d6d8d8;
 }
 
-.plan__tiltle--highlighted{
+.plan__tiltle--highlighted {
   background: #ffffff;
   border-radius: 3px;
-  padding: 8px;
+  padding: 0.5rem;
 }
 
-.plan_features{
+.plan_features {
   list-style: none;
   margin: 0;
-  padding: 0; 
+  padding: 0;
 }
 
-.plan_feature{
-margin: 8px 0;
+.plan_feature {
+  margin: 0.5rem 0;
 }
 
-.plan__btn{
-  font: inherit; 
+.plan__btn {
+  font: inherit;
   letter-spacing: 1.3px;
   border-radius: 3px;
-  padding: 4px 16px;
+  padding: 0.4rem 1rem;
   outline: none;
   background: #656684;
   border-color: #ffffff;
   color: #ffffff;
-  border: 1px solid #ffffff; 
+  border: 1px solid #ffffff;
 }
 
-#features{
+@media (min-width: 40rem) {
+  .plan {
+    width: 30%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+#features {
   background: #656684;
   margin-top: 80px;
-  padding: 16px;
+  padding: 1rem;
 }
 
-#features .section-title{
-  margin: 32px;
+#features .section-title {
+  margin: 2rem;
 }
 
 .feature-list {
@@ -78,23 +90,63 @@ margin: 8px 0;
   text-align: center;
 }
 
-.feature-list-element{
-  display: inline-block;
-  width: 30%;
+@media (min-width: 40rem) {
+  .feature-list-element {
+    display: inline-block;
+    width: 30%;
+  }
 }
 
-.feature-description{
+.feature-description {
   text-align: center;
   font-weight: bold;
   color: #022f5c;
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 
-.feature-image{
+.feature-image {
   background: #656684;
   width: 110px;
   height: 110px;
   border: 1px solid#e6e7e7;
   border-radius: 50%;
-  margin:auto;
+  margin: auto;
+  display: inline-block;
+}
+
+.modal {
+  position: fixed;
+  display: none;
+  z-index: 200;
+  top: 20%;
+  left: 30%;
+  width: 40%;
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.modal__title {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.modal__actions {
+  text-align: center;
+}
+
+.modal__action {
+  border: 1px solid #1565c0;
+  background-color: #1565c0;
+  text-decoration: none;
+  color: #ffffff;
+  font: inherit;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+}
+
+.modal__action--negative {
+  background-color: #d81b60;
+  border: 1px solid #d81b60;
 }
